@@ -1,0 +1,12 @@
+services:
+  web:
+    build: .
+    image: dockerexample:latest
+    environment:
+      - PORT=${PORT:-8080}
+      - HOST_PORT=${HOST_PORT:-8080}
+      - EXAMPLE1=${EXAMPLE1:-olaamigo}
+      - EXAMPLE2=${EXAMPLE2:-hola-amigo}
+    ports:
+      - "${HOST_PORT:-8080}:${PORT:-8080}"
+    restart: unless-stopped
