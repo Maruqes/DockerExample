@@ -1,2 +1,2 @@
 # DockerExample
-Docker exmaple with compose to test hyperhive
+Docker example with compose to test hyperhive
